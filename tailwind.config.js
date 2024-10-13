@@ -1,17 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+export default {
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        Inter: ['var(--font-inter)'],
       },
+      colors: {
+        azul: "#009EFF",
+        cinza: "#929BA6",
+        butaohover: "#0383D2",
+        azulEscuro: "#0C2047"
+      }
     },
   },
-  plugins: [],
+    plugins: [],
 };
