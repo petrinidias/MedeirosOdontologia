@@ -10,7 +10,8 @@ export default {
         azul: "#009EFF",
         cinza: "#929BA6",
         butaohover: "#0383D2",
-        azulEscuro: "#0C2047"
+        azulEscuro: "#0C2047",
+        azulGradiente: "#DCE4FF",
       }
     },
   },
