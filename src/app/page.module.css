@@ -1,0 +1,9 @@
+.gradiente{
+    height: 700px;
+    background: #dce4ff;
+    background: linear-gradient(157deg, #DCE4FF 0%, #ffffff 100%);
+    box-shadow: 1px 1px 48px 2px rgba(0, 0, 0, 0.133);
+-webkit-box-shadow: 1px 1px 48px 2px rgba(0, 0, 0, 0.133);
+-moz-box-shadow: 1px 1px 48px 2px rgba(0, 0, 0, 0.133);
+    
+}
