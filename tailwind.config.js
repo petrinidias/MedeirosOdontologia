@@ -8,10 +8,13 @@ export default {
       },
       colors: {
         azul: "#009EFF",
-        cinza: "#929BA6",
+        cinza: "#868d96",
         butaohover: "#0383D2",
         azulEscuro: "#0C2047",
         azulGradiente: "#DCE4FF",
+        preto: "#070707",
+        line: "#cccccc",
+        servicos: "#DCEDFF"
       }
     },
   },
