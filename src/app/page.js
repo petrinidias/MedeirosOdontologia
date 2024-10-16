@@ -2,7 +2,6 @@ import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 import Styles from "./page.module.css"
 import { CgProfile } from "react-icons/cg";
-import Servicos from "./servicosProps";
 
 export default function Home() {
   return (
@@ -123,54 +122,103 @@ export default function Home() {
 
       <div className="flex justify-center">
         <div className="h-fit w-[1237px] grid grid-cols-3 mt-[30px] gap-[35px] ">
-          <Servicos
-            imagem="/imgs/cadeira.png"
-            w="118"
-            h="118"
-            titulo="Limpeza Geral"
-            descricao="Remoção de placa bacteriana e tártaro 
-            para manter a saúde bucal."
-          />
 
-          <Servicos
-            imagem="/imgs/dentebrilhando.png"
-            w="118"
-            h="118"
-            titulo="Clareamento Dental"
-            descricao="Tratamentos para melhorar a cor dos dentes, tornando-os mais brancos."
-          />
-
-          <Servicos
-            imagem="/imgs/protese.png"
-            w="118"
-            h="118"
-            titulo="Próteses Dentárias"
-            descricao="Substituição de dentes perdidos com próteses fixas ou removíveis."
-          />
-          
-          <Servicos
-            imagem="/imgs/canal.png"
-            w="118"
-            h="118"
-            titulo="Tratamento de Canal"
-            descricao="Procedimento para tratar infecções na polpa dentária, salvando o dente."
-          />
-
-          <Servicos
-            imagem="/imgs/agulhinha.png"
-            w="125"
-            h="125"
-            titulo="Restaurações Dentárias"
-            descricao="Colocação de obturações para reparar dentes cariados ou danificados."
-          /> 
-
-          <Servicos
-            imagem="/imgs/aparelho.png"
-            w="104"
-            h="104"
-            titulo="Ortodontia"
-            descricao="Correção de dentes desalinhados e problemas de mordida."
-          /> 
+        <div className="h-fit w-fit shadow-lg rounded-[20px]">
+          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+            <Image
+              src="/imgs/cadeira.png"
+              width="118" 
+              height="118"
+              alt="a"
+            />
+          </div>
+          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Limpeza Geral</p>
+            <p className="text-[17px] text-cinza pb-[7px]">Remoção de placa bacteriana e tártaro 
+            para manter a saúde bucal.</p>
+            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+          </div>
+        </div>
+           
+        <div className="h-fit w-fit shadow-lg rounded-[20px]">
+          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+            <Image
+              src="/imgs/dentebrilhando.png"
+              width="118" 
+              height="118"
+              alt="a"
+            />
+          </div>
+          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Clareamento Dental</p>
+            <p className="text-[17px] text-cinza pb-[7px]">Tratamentos para melhorar a cor dos dentes, tornando-os mais brancos.</p>
+            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+          </div>
+        </div>
+           
+        <div className="h-fit w-fit shadow-lg rounded-[20px]">
+          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+            <Image
+              src="/imgs/protese.png"
+              width="118" 
+              height="118"
+              alt="a"
+            />
+          </div>
+          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Prótese Dentária</p>
+            <p className="text-[17px] text-cinza pb-[7px]">Substituição de dentes perdidos com próteses fixas ou removíveis.</p>
+            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+          </div>
+        </div>
+           
+        <div className="h-fit w-fit shadow-lg rounded-[20px]">
+          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+            <Image
+              src="/imgs/canal.png"
+              width="118" 
+              height="118"
+              alt="a"
+            />
+          </div>
+          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Tratamento de Canal</p>
+            <p className="text-[17px] text-cinza pb-[7px]">Procedimento para tratar infecções na polpa dentária, salvando o dente.</p>
+            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+          </div>
+        </div>
+           
+        <div className="h-fit w-fit shadow-lg rounded-[20px]">
+          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+            <Image
+              src="/imgs/aparelho.png"
+              width="118" 
+              height="118"
+              alt="a"
+            />
+          </div>
+          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Ortodontia</p>
+            <p className="text-[17px] text-cinza pb-[7px]">Correção de dentes desalinhados e problemas de mordida.</p>
+            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+          </div>
+        </div>
+           
+        <div className="h-fit w-fit shadow-lg rounded-[20px]">
+          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+            <Image
+              src="/imgs/agulhinha.png"
+              width="118" 
+              height="118"
+              alt="a"
+            />
+          </div>
+          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Restaurações Dentárias</p>
+            <p className="text-[17px] text-cinza pb-[7px]">Colocação de obturações para reparar dentes cariados ou danificados.</p>
+            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+          </div>
+        </div>
 
         </div>
       </div>
@@ -180,3 +228,4 @@ export default function Home() {
     </>
   );
 }
+
