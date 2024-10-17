@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
-import Styles from "./page.module.css"
+import { MdOutlineChevronRight } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import Styles from "./page.module.css"
 
 export default function Home() {
   return (
@@ -108,7 +109,7 @@ export default function Home() {
 
     <div className="h-screen w-full flex justify-center items-center">
       <div className="w-[1260px] h-fit flex flex-row items-center gap-[60px]">
-        <div className="relative w-fit h-[620px]">
+        <div className="relative w-fit h-[570px]">
           <Image
             src="/imgs/containeradriana.png" 
             alt="Adriana"
@@ -116,7 +117,7 @@ export default function Home() {
             height={470}
             className="rounded-[45px] shadow-lg "
           />
-          <div className="absolute bottom-[45px] left-1/2 transform -translate-x-1/2 rounded-[20px]">
+          <div className="absolute bottom-[0px] left-1/2 transform -translate-x-1/2 rounded-[20px]">
             <div className="flex flex-row justify-center items-center w-[230px] h-[70px] rounded-[20px] bg-white mb-[15px] shadow-lg">
               <div className="flex justify-center items-center h-[40px] w-[40px] rounded-[10px] text-[30px] text-white bg-azul mr-[15px]">
                 <CgProfile/>
@@ -137,7 +138,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative w-fit h-[620px]">
+        <div className="relative w-fit h-[570px]">
           <Image
             src="/imgs/containerraquel.png" 
             alt="Raquel"
@@ -145,7 +146,7 @@ export default function Home() {
             height={470}  
             className="rounded-[45px] shadow-lg "
           />
-          <div className="absolute bottom-[45px] left-1/2 transform -translate-x-1/2 rounded-[20px]">
+          <div className="absolute bottom-[0px] left-1/2 transform -translate-x-1/2 rounded-[20px]">
             <div className="flex flex-row justify-center items-center w-[230px] h-[70px] rounded-[20px] bg-white mb-[15px]">
               <div className="flex justify-center items-center h-[40px] w-[40px] rounded-[10px] text-[30px] text-white bg-azul mr-[15px] shadow-lg">
                 <CgProfile/>
@@ -165,18 +166,22 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
-          <p className="font-semibold text-[52px] text-azulEscuro">Sobre nós!</p>
-          <p className="w-[370px] text-cinza">
-            Nossa missão é transformar sorrisos, promovendo saúde bucal e bem-estar para todos os nossos pacientes. 
-            Com uma equipe altamente qualificada e dedicada, oferecemos tratamentos odontológicos modernos e personalizados, 
-            focados nas suas necessidades individuais.
+        <div className="ml-6">
+          <div className="flex flex-row items-center  mb-[7px]">
+            <div className="w-[4px] h-[19px] bg-azul mr-[6px]"></div>
+            <p className="font-semibold text-[20px] text-azulEscuro">SOBRE NÓS</p>
+          </div>
+          <p className="text-[36px] font-semibold text-azulEscuro leading-[45px]">Somos Especialistas<br/> em <span className="text-azul">Prótese Dentária</span>.</p>
+          <p className="w-[370px] text-cinza text-[18px] mt-4">
+            Oferecemos <span className="font-medium">soluções personalizadas</span> para recuperar a estética e a funcionalidade do seu sorriso. 
+            Com <span className="font-medium">técnicas modernas</span> e materiais de <span className="font-medium">alta qualidade</span>, garantimos resultados <span className="font-medium">naturais</span> e <span className="font-medium">duradouros</span>.
           </p>
-          <p className="w-[370px] text-cinza">
-            Valorizamos cada detalhe, desde o primeiro contato até o acompanhamento pós-tratamento, para garantir uma experiência 
-            acolhedora e confortável. Combinamos tecnologia de ponta com um atendimento humanizado, garantindo que cada visita ao 
-            dentista seja tranquila e eficaz.
-          </p>
+          <div className="mt-[20px]">
+            <div className="flex flex-row text-[20px] font-medium text-azulEscuro mb-3"><MdOutlineChevronRight className="text-[30px] text-azul"/><p>Sorrisos Naturais e Duradouros</p></div>
+            <div className="flex flex-row text-[20px] font-medium text-azulEscuro mb-3"><MdOutlineChevronRight className="text-[30px] text-azul"/><p>Técnicas Modernas em Prótese</p></div>
+            <div className="flex flex-row text-[20px] font-medium text-azulEscuro mb-3"><MdOutlineChevronRight className="text-[30px] text-azul"/><p>Material de Alta Qualidade</p></div>
+          </div>
+          <button className="w-[364px] h-[66px] bg-azul text-white font-semibold text-[24px] rounded-[20px] hover:bg-butaohover duration-150 mt-[30px]">Agende sua consulta!</button>
         </div>
       </div>
     </div>
@@ -285,6 +290,7 @@ export default function Home() {
             <p className="text-[17px] text-cinza pb-[7px]">Colocação de obturações para reparar dentes cariados ou danificados.</p>
             <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
           </div>
+
         </div>
 
         </div>
