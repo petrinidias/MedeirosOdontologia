@@ -6,7 +6,58 @@ import { CgProfile } from "react-icons/cg";
 export default function Home() {
   return (
     <>
-    <div className={Styles.gradiente}>
+    <div className={`${Styles.gradiente} overflow-x-hidden`}>
+      <div className="h-[17px] w-full flex flex-row">
+      <Image
+          src="/imgs/aviso.png" 
+          alt="Descrição da imagem"
+          width={189} 
+          height={17}  
+        />
+        <Image
+          src="/imgs/aviso.png" 
+          alt="Descrição da imagem"
+          width={189} 
+          height={17}  
+        />
+        <Image
+          src="/imgs/aviso.png" 
+          alt="Descrição da imagem"
+          width={189} 
+          height={17}  
+        />
+        <Image
+          src="/imgs/aviso.png" 
+          alt="Descrição da imagem"
+          width={189} 
+          height={17}  
+        />
+        <Image
+          src="/imgs/aviso.png" 
+          alt="Descrição da imagem"
+          width={189} 
+          height={17}  
+        />
+        <Image
+          src="/imgs/aviso.png" 
+          alt="Descrição da imagem"
+          width={189} 
+          height={17}  
+        />
+        <Image
+          src="/imgs/aviso.png" 
+          alt="Descrição da imagem"
+          width={189} 
+          height={17}  
+        />
+        <Image
+          src="/imgs/aviso.png" 
+          alt="Descrição da imagem"
+          width={189} 
+          height={17}  
+        />
+        
+      </div>
       <header className="w-full h-[110px] flex items-center justify-between px-[90px]">
         <Image
           src="/imgs/logo.png" 
@@ -55,61 +106,77 @@ export default function Home() {
       </section>
     </div>
 
-    <div className="h-[800px] w-full flex flex-row justify-center items-center gap-[200px]">
-      <div className="relative w-fit h-[620px]">
-        <Image
-          src="/imgs/containeradriana.png" 
-          alt="Adriana"
-          width={390} 
-          height={520}
-          className="rounded-[45px] shadow-lg "
-        />
-        <div className="absolute bottom-[0px] left-1/2 transform -translate-x-1/2 rounded-[20px]">
-          <div className="flex flex-row justify-center items-center w-[230px] h-[70px] rounded-[20px] bg-white mb-[15px] shadow-lg">
-            <div className="flex justify-center items-center h-[40px] w-[40px] rounded-[10px] text-[30px] text-white bg-azul mr-[15px]">
-              <CgProfile/>
+    <div className="h-screen w-full flex justify-center items-center">
+      <div className="w-[1260px] h-fit flex flex-row items-center gap-[60px]">
+        <div className="relative w-fit h-[620px]">
+          <Image
+            src="/imgs/containeradriana.png" 
+            alt="Adriana"
+            width={353} 
+            height={470}
+            className="rounded-[45px] shadow-lg "
+          />
+          <div className="absolute bottom-[45px] left-1/2 transform -translate-x-1/2 rounded-[20px]">
+            <div className="flex flex-row justify-center items-center w-[230px] h-[70px] rounded-[20px] bg-white mb-[15px] shadow-lg">
+              <div className="flex justify-center items-center h-[40px] w-[40px] rounded-[10px] text-[30px] text-white bg-azul mr-[15px]">
+                <CgProfile/>
+              </div>
+              <div>
+                <p className="font-bold text-azulEscuro text-[17px] h-[22px] ">Dra. Adriana Dias</p>
+                <p className="font-medium text-cinza text-[15px]">Cirurgiã-dentista</p>
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-azulEscuro text-[17px] h-[22px] ">Dra. Adriana Dias</p>
-              <p className="font-medium text-cinza text-[15px]">Cirurgiã-dentista</p>
+            <div className="flex flex-row justify-center items-center w-[230px] h-[120px] rounded-[20px] text-azul bg-white text-[15px] shadow-lg">
+              <p>
+                <span className="text-azulEscuro font-semibold ">Especializações em:</span><br/>
+                Ortodontia<br/>
+                Prótese dentária<br/>
+                <span className="text-[14px]">Procedimentos emergênciais</span>
+              </p>
             </div>
-          </div>
-          <div className="flex flex-row justify-center items-center w-[230px] h-[120px] rounded-[20px] text-azul bg-white text-[15px] shadow-lg">
-            <p>
-              <span className="text-azulEscuro font-semibold ">Especializações em:</span><br/>
-              Ortodontia<br/>
-              Prótese dentária<br/>
-              <span className="text-[14px]">Procedimentos emergênciais</span>
-            </p>
           </div>
         </div>
-      </div>
 
-      <div className="relative w-fit h-[620px]">
-        <Image
-          src="/imgs/containerraquel.png" 
-          alt="Raquel"
-          width={390} 
-          height={520}  
-          className="rounded-[45px] shadow-lg "
-        />
-        <div className="absolute bottom-[0px] left-1/2 transform -translate-x-1/2 rounded-[20px]">
-          <div className="flex flex-row justify-center items-center w-[230px] h-[70px] rounded-[20px] bg-white mb-[15px]">
-            <div className="flex justify-center items-center h-[40px] w-[40px] rounded-[10px] text-[30px] text-white bg-azul mr-[15px] shadow-lg">
-              <CgProfile/>
+        <div className="relative w-fit h-[620px]">
+          <Image
+            src="/imgs/containerraquel.png" 
+            alt="Raquel"
+            width={353} 
+            height={470}  
+            className="rounded-[45px] shadow-lg "
+          />
+          <div className="absolute bottom-[45px] left-1/2 transform -translate-x-1/2 rounded-[20px]">
+            <div className="flex flex-row justify-center items-center w-[230px] h-[70px] rounded-[20px] bg-white mb-[15px]">
+              <div className="flex justify-center items-center h-[40px] w-[40px] rounded-[10px] text-[30px] text-white bg-azul mr-[15px] shadow-lg">
+                <CgProfile/>
+              </div>
+              <div>
+                <p className="font-bold text-azulEscuro text-[17px] h-[22px] ">Dra. Raquel Dias</p>
+                <p className="font-medium text-cinza text-[15px]">Cirurgiã-dentista</p>
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-azulEscuro text-[17px] h-[22px] ">Dra. Raquel Dias</p>
-              <p className="font-medium text-cinza text-[15px]">Cirurgiã-dentista</p>
+            <div className="flex flex-row justify-center items-center w-[230px] h-[120px] rounded-[20px] text-azul bg-white text-[15px] shadow-lg">
+              <p>
+                <span className="text-azulEscuro font-semibold ">Especializações em:</span><br/>
+                Saúde pública com ênfase<br/> em família<br/>
+                Laserterapia<br/>
+              </p>
             </div>
           </div>
-          <div className="flex flex-row justify-center items-center w-[230px] h-[120px] rounded-[20px] text-azul bg-white text-[15px] shadow-lg">
-            <p>
-              <span className="text-azulEscuro font-semibold ">Especializações em:</span><br/>
-              Saúde pública com ênfase<br/> em família<br/>
-              Laserterapia<br/>
-            </p>
-          </div>
+        </div>
+
+        <div>
+          <p className="font-semibold text-[52px] text-azulEscuro">Sobre nós!</p>
+          <p className="w-[370px] text-cinza">
+            Nossa missão é transformar sorrisos, promovendo saúde bucal e bem-estar para todos os nossos pacientes. 
+            Com uma equipe altamente qualificada e dedicada, oferecemos tratamentos odontológicos modernos e personalizados, 
+            focados nas suas necessidades individuais.
+          </p>
+          <p className="w-[370px] text-cinza">
+            Valorizamos cada detalhe, desde o primeiro contato até o acompanhamento pós-tratamento, para garantir uma experiência 
+            acolhedora e confortável. Combinamos tecnologia de ponta com um atendimento humanizado, garantindo que cada visita ao 
+            dentista seja tranquila e eficaz.
+          </p>
         </div>
       </div>
     </div>
