@@ -70,7 +70,7 @@ export default function Home() {
           <p className="font-Inter font-medium text-azulEscuro text-[14px] hover:text-butaohover cursor-pointer duration-150">Home</p>
           <p className="font-Inter font-medium text-azul text-[14px] hover:text-butaohover cursor-pointer duration-150">Sobre</p>
           <p className="font-Inter font-medium text-azul text-[14px] hover:text-butaohover cursor-pointer duration-150">Serviços</p>
-          <button className="font-Inter font-medium text-white text-[16px] flex justify-center items-center w-[217px] h-[43px] bg-azul hover:bg-butaohover duration-150 rounded-[27px]">Agende sua consulta</button>
+          <a href="/consulta" className="font-Inter font-medium text-white text-[16px] flex justify-center items-center w-[217px] h-[43px] bg-azul hover:bg-butaohover duration-150 rounded-[27px]">Agende sua consulta</a>
         </div>
       </header>
 
@@ -82,10 +82,7 @@ export default function Home() {
           <p className="text-[16px] font-normal text-cinza  mb-[30px] leading-tight">
             Oferecemos atendimento personalizado, focado na prevenção, para que você sorria com confiança.
           </p>
-          <button className="w-[364px] h-[66px] bg-azul hover:bg-butaohover text-white text-[24px] font-medium rounded-[20px] duration-150 mb-[30px]">
-             Agende sua consulta
-          </button>
-
+          <a href="/consulta" className="font-Inter font-medium text-white text-[23px] flex justify-center items-center w-[364px] h-[66px] bg-azul hover:bg-butaohover duration-150 rounded-[18px]">Agende sua consulta</a>
           <div className="w-[515px] h-fit flex flex-row items-center">
             <span className="bg-azul text-[16px] text-white w-[26px] h-[26px] rounded-full flex justify-center items-center mt-[34px] ">
               <FaLocationDot/>
@@ -194,109 +191,120 @@ export default function Home() {
 
       <div className="flex justify-center">
         <div className="h-fit w-[1237px] grid grid-cols-3 mt-[30px] gap-[35px] ">
-
-        <div className="h-fit w-fit shadow-lg rounded-[20px]">
-          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
-            <Image
-              src="/imgs/cadeira.png"
-              width="118" 
-              height="118"
-              alt="a"
-            />
+          <div className="h-fit w-fit shadow-lg rounded-[20px]">
+            <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+              <Image
+                src="/imgs/cadeira.png"
+                width="118" 
+                height="118"
+                alt="a"
+              />
+            </div>
+            <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+              <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Limpeza Geral</p>
+              <p className="text-[17px] text-cinza pb-[7px]">Remoção de placa bacteriana e tártaro 
+              para manter a saúde bucal.</p>
+              <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+            </div>
           </div>
-          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
-            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Limpeza Geral</p>
-            <p className="text-[17px] text-cinza pb-[7px]">Remoção de placa bacteriana e tártaro 
-            para manter a saúde bucal.</p>
-            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+            
+          <div className="h-fit w-fit shadow-lg rounded-[20px]">
+            <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+              <Image
+                src="/imgs/dentebrilhando.png"
+                width="118" 
+                height="118"
+                alt="a"
+              />
+            </div>
+            <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+              <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Clareamento Dental</p>
+              <p className="text-[17px] text-cinza pb-[7px]">Tratamentos para melhorar a cor dos dentes, tornando-os mais brancos.</p>
+              <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+            </div>
           </div>
-        </div>
-           
-        <div className="h-fit w-fit shadow-lg rounded-[20px]">
-          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
-            <Image
-              src="/imgs/dentebrilhando.png"
-              width="118" 
-              height="118"
-              alt="a"
-            />
+            
+          <div className="h-fit w-fit shadow-lg rounded-[20px]">
+            <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+              <Image
+                src="/imgs/protese.png"
+                width="118" 
+                height="118"
+                alt="a"
+              />
+            </div>
+            <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+              <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Prótese Dentária</p>
+              <p className="text-[17px] text-cinza pb-[7px]">Substituição de dentes perdidos com próteses fixas ou removíveis.</p>
+              <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+            </div>
           </div>
-          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
-            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Clareamento Dental</p>
-            <p className="text-[17px] text-cinza pb-[7px]">Tratamentos para melhorar a cor dos dentes, tornando-os mais brancos.</p>
-            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+            
+          <div className="h-fit w-fit shadow-lg rounded-[20px]">
+            <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+              <Image
+                src="/imgs/canal.png"
+                width="118" 
+                height="118"
+                alt="a"
+              />
+            </div>
+            <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+              <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Tratamento de Canal</p>
+              <p className="text-[17px] text-cinza pb-[7px]">Procedimento para tratar infecções na polpa dentária, salvando o dente.</p>
+              <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+            </div>
           </div>
-        </div>
-           
-        <div className="h-fit w-fit shadow-lg rounded-[20px]">
-          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
-            <Image
-              src="/imgs/protese.png"
-              width="118" 
-              height="118"
-              alt="a"
-            />
+            
+          <div className="h-fit w-fit shadow-lg rounded-[20px]">
+            <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+              <Image
+                src="/imgs/aparelho.png"
+                width="118" 
+                height="118"
+                alt="a"
+              />
+            </div>
+            <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+              <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Ortodontia</p>
+              <p className="text-[17px] text-cinza pb-[7px]">Correção de dentes desalinhados e problemas de mordida.</p>
+              <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+            </div>
           </div>
-          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
-            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Prótese Dentária</p>
-            <p className="text-[17px] text-cinza pb-[7px]">Substituição de dentes perdidos com próteses fixas ou removíveis.</p>
-            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+            
+          <div className="h-fit w-fit shadow-lg rounded-[20px]">
+            <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
+              <Image
+                src="/imgs/agulhinha.png"
+                width="118" 
+                height="118"
+                alt="a"
+              />
+            </div>
+            <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
+              <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Restaurações Dentárias</p>
+              <p className="text-[17px] text-cinza pb-[7px]">Colocação de obturações para reparar dentes cariados ou danificados.</p>
+              <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
+            </div>
           </div>
-        </div>
-           
-        <div className="h-fit w-fit shadow-lg rounded-[20px]">
-          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
-            <Image
-              src="/imgs/canal.png"
-              width="118" 
-              height="118"
-              alt="a"
-            />
-          </div>
-          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
-            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Tratamento de Canal</p>
-            <p className="text-[17px] text-cinza pb-[7px]">Procedimento para tratar infecções na polpa dentária, salvando o dente.</p>
-            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
-          </div>
-        </div>
-           
-        <div className="h-fit w-fit shadow-lg rounded-[20px]">
-          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
-            <Image
-              src="/imgs/aparelho.png"
-              width="118" 
-              height="118"
-              alt="a"
-            />
-          </div>
-          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
-            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Ortodontia</p>
-            <p className="text-[17px] text-cinza pb-[7px]">Correção de dentes desalinhados e problemas de mordida.</p>
-            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
-          </div>
-        </div>
-           
-        <div className="h-fit w-fit shadow-lg rounded-[20px]">
-          <div className="w-[390px] h-[196px] flex justify-center items-center bg-servicos rounded-t-[20px] ">
-            <Image
-              src="/imgs/agulhinha.png"
-              width="118" 
-              height="118"
-              alt="a"
-            />
-          </div>
-          <div className="w-[390px] h-[170px] p-[20px] flex flex-col bg-white rounded-b-[20px]">
-            <p className="text-[24px] font-semibold text-azulEscuro pb-[7px]">Restaurações Dentárias</p>
-            <p className="text-[17px] text-cinza pb-[7px]">Colocação de obturações para reparar dentes cariados ou danificados.</p>
-            <p className="text-[16px] text-azul underline font-semibold">Saiba mais</p>
-          </div>
-
-        </div>
-
         </div>
       </div>
-
-
+    </section>
+    
+    <section className="h-[700px] w-full flex items-center justify-center">
+      <div>
+        <div className="relative h-[400px] w-[900px] bg-azul flex flex-row">
+          <div>
+            <p>
+              Colocação de obturações para reparar dentes cariados ou danificados. Colocação de obturações para reparar dentes cariados ou danificados. Colocação de obturações para reparar dentes cariados ou danificados. Colocação de obturações para reparar dentes cariados ou danificados.
+            </p>
+          </div>
+          <img
+          src="/imgs/laser.png"
+          className="absolute bottom-[0px] left-1/2 transform -translate-x-1/2 h-[500px] w-[360px]"
+          />
+        </div>
+      </div>
     </section>
     </>
   );
