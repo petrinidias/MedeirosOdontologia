@@ -1,11 +1,11 @@
 .gradiente{
-    height: 100vh;
+    height: 750px;
     background: #dce4ff;
     background: linear-gradient(100deg, #ffffff 35%, #DCE4FF 100%);
 
 }
 .gradiente2{
-    height: 140vh;
+    height: 1000px;
     background: #dce4ff;
     background: linear-gradient(130deg, #ffffff 35%, #ebefff 100%);
 
