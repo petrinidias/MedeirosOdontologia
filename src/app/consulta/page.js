@@ -19,7 +19,7 @@ export default function Consulta() {
     console.log(mes + " " + dia)
 
 
-    let link = "https://wa.me/5521222222222?Olá, meu nome é " + nome.trim() + " " + sobrenome.trim() +", gostaria de agendar um serviço de " + servico + "para o dia" + dataformatada + " às " + hora + ", teriam disponibilidade?"
+    let link = "https://wa.me/5521964144071?text=Olá,%20meu%20nome%20é%20" + nome.trim() + "%20" + sobrenome.trim() +",%20gostaria%20de%20agendar%20um%20serviço%20de%20" + servico + "%20para%20o%20dia%20" + dataformatada + "%20às%20" + hora + ",%20teriam%20disponibilidade?"
 
     
     return (
@@ -36,12 +36,13 @@ export default function Consulta() {
                     <div className="w-[695px] h-[63px] bg-input rounded-[20px] flex justify-center items-center mt-[25px]">
                         <select id="servicos" name="servicos" onChange={(e) => setServico(e.target.value)} className="bg-input w-[650px] h-[63px] rounded-[20px]  focus:outline-none focus:border-none">
                             <option disabled>Selecione um serviço</option>
-                            <option value="*Limpeza geral*">Limpeza Geral</option>
-                            <option value="*Clareamento dental*">Clareamento Dental</option>
-                            <option value="*Prótese dentária*">Prótese Dentária</option>
-                            <option value="*Tratamento de canal*">Tratamento de Canal</option>
-                            <option value="*Ortodontia*">Ortodontia</option>
-                            <option value="*Restaurações dentárias*">Restaurações Dentárias</option>
+                            <option value="Laserterapia">Laserterapia</option>
+                            <option value="Limpeza geral">Limpeza Geral</option>
+                            <option value="Clareamento dental">Clareamento Dental</option>
+                            <option value="Prótese dentária">Prótese Dentária</option>
+                            <option value="Tratamento de canal">Tratamento de Canal</option>
+                            <option value="Ortodontia">Ortodontia</option>
+                            <option value="Restaurações dentárias">Restaurações Dentárias</option>
                         </select>
                     </div>
                     <input type="date" id="date" name="date" min="2024-01-01" max="2024-12-31" onChange={(e) => setData(e.target.value)} className="bg-input w-[695px] h-[63px] rounded-[20px] p-7 mt-[25px] text-cinza focus:outline-none focus:border-none"></input>
