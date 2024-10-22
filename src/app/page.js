@@ -8,48 +8,51 @@ export default function Home() {
   return (
     <>
       <div className={Styles.gradiente}>
-        
-        <header className="w-full h-[110px] flex items-center justify-between px-[90px]">
-          <Image
-            src="/imgs/logo.png" 
-            alt="Descrição da imagem"
-            width={136} 
-            height={32}  
-          />
-          <div className="flex flex-row items-center gap-[67px] scroll-smooth">
-            <p className="font-Inter font-medium text-azulEscuro text-[14px] hover:text-butaohover cursor-pointer duration-150">Home</p>
-            <a href="#sobre" className="font-Inter font-medium text-azul text-[14px] hover:text-butaohover cursor-pointer duration-150">Sobre</a>
-            <a href="#servicos" className="font-Inter font-medium text-azul text-[14px] hover:text-butaohover cursor-pointer duration-150">Serviços</a>
-            <a href="/consulta" className="font-Inter font-medium text-white text-[16px] flex justify-center items-center w-[217px] h-[43px] bg-azul hover:bg-butaohover duration-150 rounded-[27px]">Agende sua consulta</a>
-          </div>
-        </header>
-
-        <section className="flex flex-row justify-between items-center mt-[30px]">
-          <div className="w-[512px] h-[522px] ml-[90px] mt-[10px]">
-            <p className="text-azulEscuro text-[65px] font-semibold leading-tight mb-[30px]">
-              Consulte sua <span className="text-azul">saúde dental</span> agora
-            </p>
-            <p className="text-[16px] font-normal text-cinza  mb-[30px] leading-tight">
-              Oferecemos atendimento personalizado, focado na prevenção, para que você sorria com confiança.
-            </p>
-            <a href="/consulta" className="font-Inter font-medium text-white text-[23px] flex justify-center items-center w-[364px] h-[66px] bg-azul hover:bg-butaohover duration-150 rounded-[18px]">Agende sua consulta</a>
-            <div className="w-[515px] h-fit flex flex-row items-center">
-              <span className="bg-azul text-[16px] text-white w-[26px] h-[26px] rounded-full flex justify-center items-center mt-[34px] ">
-                <FaLocationDot/>
-              </span>
-              <p className="text-cinza text-[17px] pl-[15px] mt-[35px] ">
-                Estamos localizados em <a className="text-azul cursor-pointer"> Vila da Penha - Rio de Janeiro</a>
-              </p>
-            </div>
-          </div>
-          <div className="mr-[90px]">
+        <div className="flex justify-center">
+          <header className="w-[1237px] h-[110px] flex items-center justify-between">
             <Image
-              src="/imgs/dri2.png" 
+              src="/imgs/logo.png" 
               alt="Descrição da imagem"
-              width={615} 
-              height={523}  
-              className={Styles.sombra}
+              width={136} 
+              height={32}  
             />
+            <div className="flex flex-row items-center gap-[67px] scroll-smooth">
+              <p className="font-Inter font-medium text-azulEscuro text-[14px] hover:text-butaohover cursor-pointer duration-150">Home</p>
+              <a href="#sobre" className="font-Inter font-medium text-azul text-[14px] hover:text-butaohover cursor-pointer duration-150">Sobre</a>
+              <a href="#servicos" className="font-Inter font-medium text-azul text-[14px] hover:text-butaohover cursor-pointer duration-150">Serviços</a>
+              <a href="/consulta" className="font-Inter font-medium text-white text-[16px] flex justify-center items-center w-[217px] h-[43px] bg-azul hover:bg-butaohover duration-150 rounded-[27px]">Agende sua consulta</a>
+            </div>
+          </header>
+        </div>
+      
+        <section className="flex justify-center">
+          <div className="flex justify-between w-[1237px] mt-[30px] ">
+            <div className="w-[512px] h-[522px] mt-[10px]">
+              <p className="text-azulEscuro text-[65px] font-semibold leading-tight mb-[30px]">
+                Consulte sua <span className="text-azul">saúde dental</span> agora
+              </p>
+              <p className="text-[16px] font-normal text-cinza  mb-[30px] leading-tight">
+                Oferecemos atendimento personalizado, focado na prevenção, para que você sorria com confiança.
+              </p>
+              <a href="/consulta" className="font-Inter font-medium text-white text-[23px] flex justify-center items-center w-[364px] h-[66px] bg-azul hover:bg-butaohover duration-150 rounded-[18px]">Agende sua consulta</a>
+              <div className="w-[515px] h-fit flex flex-row items-center">
+                <span className="bg-azul text-[16px] text-white w-[26px] h-[26px] rounded-full flex justify-center items-center mt-[34px] ">
+                  <FaLocationDot/>
+                </span>
+                <p className="text-cinza text-[17px] pl-[15px] mt-[35px] ">
+                  Estamos localizados em <a className="text-azul cursor-pointer"> Vila da Penha - Rio de Janeiro</a>
+                </p>
+              </div>
+            </div>
+            <div>
+              <Image
+                src="/imgs/dri2.png" 
+                alt="Descrição da imagem"
+                width={615} 
+                height={523}  
+                className={Styles.sombra}
+              />
+            </div>
           </div>
         </section>
       </div>
@@ -133,9 +136,11 @@ export default function Home() {
       </div>
 
       <section className={Styles.gradiente2} id="servicos">
-        <div className="pl-[90px] pt-[50px]">
-          <p className="text-azulEscuro font-semibold text-[40px]">Nossos principais serviços</p>
-          <p className="text-cinza text-[18px]">Oferecemos atendimento personalizado, focado na <br/>prevenção, para que você sorria com confiança.</p>
+        <div className="flex justify-center">
+          <div className="w-[1237px] h-fit mb-[40px]">
+            <p className="text-azulEscuro font-semibold text-[40px]">Nossos principais serviços</p>
+            <p className="text-cinza text-[18px]">Oferecemos atendimento personalizado, focado na <br/>prevenção, para que você sorria com confiança.</p>
+          </div>
         </div>
 
         <div className="flex justify-center">
