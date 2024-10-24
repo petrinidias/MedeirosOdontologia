@@ -4,6 +4,11 @@ import "./globals.css";
 const Inter = localFont({
   src: [
     {
+      path: './fonts/inter/Inter-Light.ttf',
+      weight: '400',
+      style: 'light',
+    },
+    {
       path: './fonts/inter/Inter-Regular.ttf',
       weight: '400',
       style: 'normal',

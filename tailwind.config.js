@@ -14,7 +14,8 @@ export default {
         azulGradiente: "#DCE4FF",
         preto: "#070707",
         line: "#cccccc",
-        servicos: "#DCEDFF"
+        servicos: "#DCEDFF",
+        input: "#E8E7E7"
       }
     },
   },
