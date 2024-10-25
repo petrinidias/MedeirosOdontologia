@@ -18,10 +18,10 @@ export default function Consulta() {
 
     console.log(mes + " " + dia)
 
+    const isFormComplete = nome && sobrenome && servico && data && hora;
 
     let link = "https://wa.me/5521964144071?text=Olá,%20meu%20nome%20é%20" + nome.trim() + "%20" + sobrenome.trim() +",%20gostaria%20de%20agendar%20um%20serviço%20de%20" + servico + "%20para%20o%20dia%20" + dataformatada + "%20às%20" + hora + ",%20teriam%20disponibilidade?"
 
-    
     return (
       <>
         <div className="bg-azul h-screen w-full flex justify-center items-center">
@@ -48,6 +48,7 @@ export default function Consulta() {
                     <input type="date" id="date" name="date" min="2024-01-01" max="2024-12-31" onChange={(e) => setData(e.target.value)} className="bg-input w-[695px] h-[63px] rounded-[20px] p-7 mt-[25px] text-cinza focus:outline-none focus:border-none"></input>
                     <div className="w-[695px] h-[63px] bg-input rounded-[20px] flex justify-center items-center mt-[25px]">
                         <select id="horario" name="horario" onChange={(e) => setHora(e.target.value)} className="bg-input w-[650px] h-[63px] rounded-[20px] text-cinza focus:outline-none focus:border-none">
+                            <option selected disabled>Selecione um horário</option>
                             <option value="08:00h">08:00h</option>
                             <option value="09:00h">09:00h</option>
                             <option value="10:00h">10:00h</option>
@@ -61,9 +62,19 @@ export default function Consulta() {
                     </div>
                 </div>
 
-                <a href={link} target="_blank" className="bg-azul flex justify-center items-center text-[40px] w-[695px] h-[63px] rounded-[20px] p-7 mt-[25px] text-white hover:bg-butaohover cursor-pointer duration-150">
-                    <GoArrowRight/>
-                </a>
+                {isFormComplete ? (
+                    <a
+                        href={link}
+                        target="_blank"
+                        className="bg-azul flex justify-center items-center text-[40px] w-[695px] h-[63px] rounded-[20px] p-7 mt-[25px] text-white hover:bg-butaohover cursor-pointer duration-150"
+                    >
+                        <GoArrowRight />
+                    </a>
+                ) : (
+                    <div className="bg-gray-400 flex justify-center items-center text-[40px] w-[695px] h-[63px] rounded-[20px] p-7 mt-[25px] text-white cursor-not-allowed">
+                        <GoArrowRight />
+                    </div>
+                )}
 
                 <a href="/" className="flex flex-row items-center mt-[25px]">
                     <GoArrowLeft className="text-[22px] text-azulEscuro mr-[3px] "/>
