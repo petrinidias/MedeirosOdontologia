@@ -11,14 +11,20 @@ export default function Consulta() {
     const [data, setData] = useState("")
     const [hora, setHora] = useState("")
 
-    let mes = data.substring(5,7)
-    let dia = data.substring(8,10)
+    let mesS = data.substring(5,7)
+    let diaS = data.substring(8,10)
 
-    let dataformatada = dia + "/" + mes
+    let dataformatada = diaS + "/" + mesS
 
-    console.log(mes + " " + dia)
+    let date = new Date();
 
-    const isFormComplete = nome && sobrenome && servico && data && hora;
+    let dia = String(date.getDate()).padStart(2, '0');
+    let mes = String(date.getMonth() + 1).padStart(2, '0');
+    let ano = date.getFullYear(); 
+
+    let dataInput = `${ano}-${mes}-${dia}`;
+
+    let isFormComplete = nome && sobrenome && servico && data && hora;
 
     let link = "https://wa.me/5521964144071?text=Olá,%20meu%20nome%20é%20" + nome.trim() + "%20" + sobrenome.trim() +",%20gostaria%20de%20agendar%20um%20serviço%20de%20" + servico + "%20para%20o%20dia%20" + dataformatada + "%20às%20" + hora + ",%20teriam%20disponibilidade?"
 
@@ -45,7 +51,7 @@ export default function Consulta() {
                             <option value="Restaurações dentárias">Restaurações Dentárias</option>
                         </select>
                     </div>
-                    <input type="date" id="date" name="date" min="2024-01-01" max="2024-12-31" onChange={(e) => setData(e.target.value)} className="bg-input w-[695px] h-[63px] rounded-[20px] p-7 mt-[25px] text-cinza focus:outline-none focus:border-none"></input>
+                    <input type="date" readonly id="date" name="date" min={dataInput} max="2024-12-31" onChange={(e) => setData(e.target.value)} className="bg-input w-[695px] h-[63px] rounded-[20px] p-7 mt-[25px] text-cinza focus:outline-none focus:border-none"></input>
                     <div className="w-[695px] h-[63px] bg-input rounded-[20px] flex justify-center items-center mt-[25px]">
                         <select id="horario" name="horario" onChange={(e) => setHora(e.target.value)} className="bg-input w-[650px] h-[63px] rounded-[20px] text-cinza focus:outline-none focus:border-none">
                             <option selected disabled>Selecione um horário</option>
