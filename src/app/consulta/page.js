@@ -67,7 +67,7 @@ export default function Consulta() {
 
                 <a href="/" className="flex flex-row items-center mt-[25px]">
                     <GoArrowLeft className="text-[22px] text-azulEscuro mr-[3px] "/>
-                    <p className="text-[17px] font-medium text-azulEscuro ">Voltar para a página principal</p>
+                    <p className="text-[17px] font-medium text-azulEscuro ">Voltar</p>
                 </a>
             </div>
         </div>
