@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="gradiente xl:h-[750px] lg:h-[600px] w-[full] ">
         <div className="flex justify-center">
-          {/*<header className="w-[1237px] h-[110px] flex items-center justify-between">
+          <header className="w-[1237px] h-[110px] flex items-center justify-between">
             <Image
               src="/imgs/logo.png" 
               alt="Descrição da imagem"
@@ -22,7 +22,7 @@ export default function Home() {
               <a href="#servicos" className="font-Inter font-medium text-azul text-[14px] hover:text-butaohover cursor-pointer duration-150">Serviços</a>
               <a href="/consulta" className="font-Inter font-medium text-white text-[16px] flex justify-center items-center w-[217px] h-[43px] bg-azul hover:bg-butaohover duration-150 rounded-[27px]">Agende sua consulta</a>
             </div>
-          </header>*/}
+          </header>
         </div>
       
         <section className="flex justify-center">
