@@ -24,7 +24,22 @@ export default function Consulta() {
 
     let dataInput = `${ano}-${mes}-${dia}`;
 
-    let isFormComplete = nome && sobrenome && servico && data && hora;
+    let verificadorData
+    let verificadorMes
+
+    if(mesS < mes){
+        verificadorData = false
+    } else {
+        verificadorData = true
+    }
+
+    if(diaS < dia){
+        verificadorMes = false
+    } else {
+        verificadorMes = true
+    }
+
+    let isFormComplete = nome && sobrenome && servico && data && hora && verificadorData && verificadorMes;
 
     let link = "https://wa.me/5521964144071?text=Olá,%20meu%20nome%20é%20" + nome.trim() + "%20" + sobrenome.trim() +",%20gostaria%20de%20agendar%20um%20serviço%20de%20" + servico + "%20para%20o%20dia%20" + dataformatada + "%20às%20" + hora + ",%20teriam%20disponibilidade?"
 
